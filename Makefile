@@ -1,4 +1,4 @@
-all:chapter2_1 chapter2_2 chapter3_1 chapter3_2
+all:chapter2_1 chapter2_2 chapter3_1 chapter3_2 chapter6_1 chapter6_2
 
 #switch中default测试
 chapter2_1:chapter2_1.o
@@ -23,6 +23,18 @@ chapter3_2:chapter3_2.o
 	g++ -o chapter3_2 chapter3_2.o
 chapter3_2.o:chapter3_2.c
 	g++ -c chapter3_2.c
+
+#装饰模式
+chapter6_1:chapter6_1.o
+	g++ -o chapter6_1 chapter6_1.o
+chapter6_1.o:chapter6_1.c
+	g++ -c chapter6_1.c
+
+#具体装饰模式的实现
+chapter6_2:chapter6_2.o
+	g++ -o chapter6_2 chapter6_2.o
+chapter6_2.o:chapter6_2.c
+	g++ -c chapter6_2.c
 
 
 
