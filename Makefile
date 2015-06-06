@@ -1,4 +1,7 @@
-all:chapter2_1 chapter2_2 chapter3_1 chapter3_2 chapter6_1 chapter6_2  chapter7_1 chapter7_2 chapter8_1 chapter8_2 chapter9_1 chapter9_2 chapter10_1       
+all:chapter2_1 chapter2_2 chapter3_1 chapter3_2 chapter6_1 chapter6_2 \
+	chapter7_1 chapter7_2 chapter8_1 chapter8_2 chapter9_1 chapter9_2 \
+	chapter10_1  chapter12_1 chapter12_2 chapter13_1 chapter14_1 \
+	chapter14_2 chapter15_1 chapter15_2
 
 #switch中default测试
 chapter2_1:chapter2_1.o
@@ -77,6 +80,54 @@ chapter10_1:chapter10_1.o
 	g++ -o chapter10_1 chapter10_1.o
 chapter10_1.o:chapter10_1.c
 	g++ -c chapter10_1.c
+
+#外观模式例子
+chapter12_1:chapter12_1.o
+	g++ -o chapter12_1 chapter12_1.o
+chapter12_1.o:chapter12_1.c
+	g++ -c chapter12_1.c
+
+#申请贷款的外观模式例子
+chapter12_2:chapter12_2.o
+	g++ -o chapter12_2 chapter12_2.o
+chapter12_2.o:chapter12_2.c
+	g++ -c chapter12_2.c
+
+
+#建造者模式例子
+chapter13_1:chapter13_1.o
+	g++ -o chapter13_1 chapter13_1.o
+chapter13_1.o:chapter13_1.c
+	g++ -c chapter13_1.c
+
+
+#观察者模式例子
+chapter14_1:chapter14_1.o
+	g++ -o chapter14_1 chapter14_1.o
+chapter14_1.o:chapter14_1.c
+	g++ -c chapter14_1.c
+
+#股票交易的观察者模式例子
+chapter14_2:chapter14_2.o
+	g++ -o chapter14_2 chapter14_2.o
+chapter14_2.o:chapter14_2.c
+	g++ -c chapter14_2.c
+
+#抽象工厂模式例子
+chapter15_1:chapter15_1.o
+	g++ -o chapter15_1 chapter15_1.o
+chapter15_1.o:chapter15_1.c
+	g++ -c chapter15_1.c
+
+#实际抽象工厂模式（动物世界）例子
+chapter15_2:chapter15_2.o
+	g++ -o chapter15_2 chapter15_2.o
+chapter15_2.o:chapter15_2.c
+	g++ -c chapter15_2.c
+
+
+
+
 
 
 
