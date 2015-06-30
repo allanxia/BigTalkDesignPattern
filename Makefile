@@ -3,6 +3,7 @@ all:chapter2_1 chapter2_2 chapter3_1 chapter3_2 chapter6_1 chapter6_2 \
 	chapter10_1  chapter12_1 chapter12_2 chapter13_1 chapter14_1 \
 	chapter14_2 chapter15_1 chapter15_2 chapter18_1 chapter18_2 \
 	chapter19_1  chapter19_2 chapter20_1 chapter21_1 chapter21_2 \
+	chapter22_1 chapter22_2 chapter23_1 chapter24_1
 
 #switch中default测试
 chapter2_1:chapter2_1.o
@@ -168,6 +169,29 @@ chapter21_2:chapter21_2.o
 chapter21_2.o:chapter21_2.c
 	g++ -c chapter21_2.c
 
+#桥接模式例子
+chapter22_1:chapter22_1.o
+	g++ -o chapter22_1 chapter22_1.o
+chapter22_1.o:chapter22_1.c
+	g++ -c chapter22_1.c
+
+#不同品牌手机游戏桥接模式例子
+chapter22_2:chapter22_2.o
+	g++ -o chapter22_2 chapter22_2.o
+chapter22_2.o:chapter22_2.c
+	g++ -c chapter22_2.c
+
+#命令模式例子
+chapter23_1:chapter23_1.o
+	g++ -o chapter23_1 chapter23_1.o
+chapter23_1.o:chapter23_1.c
+	g++ -c chapter23_1.c
+
+#享元模式例子
+chapter24_1:chapter24_1.o
+	g++ -o chapter24_1 chapter24_1.o
+chapter24_1.o:chapter24_1.c
+	g++ -c chapter24_1.c
 
 
 .PHONY:all
