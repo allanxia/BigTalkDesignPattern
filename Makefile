@@ -3,7 +3,8 @@ all:chapter2_1 chapter2_2 chapter3_1 chapter3_2 chapter6_1 chapter6_2 \
 	chapter10_1  chapter12_1 chapter12_2 chapter13_1 chapter14_1 \
 	chapter14_2 chapter15_1 chapter15_2 chapter18_1 chapter18_2 \
 	chapter19_1  chapter19_2 chapter20_1 chapter21_1 chapter21_2 \
-	chapter22_1 chapter22_2 chapter23_1 chapter24_1
+	chapter22_1 chapter22_2 chapter23_1 chapter24_1 chapter25_1 \
+	chapter25_2
 
 #switch中default测试
 chapter2_1:chapter2_1.o
@@ -187,11 +188,23 @@ chapter23_1:chapter23_1.o
 chapter23_1.o:chapter23_1.c
 	g++ -c chapter23_1.c
 
-#享元模式例子
+#责任链模式代码
 chapter24_1:chapter24_1.o
 	g++ -o chapter24_1 chapter24_1.o
 chapter24_1.o:chapter24_1.c
 	g++ -c chapter24_1.c
+
+#中介者模式代码
+chapter25_1:chapter25_1.o
+	g++ -o chapter25_1 chapter25_1.o
+chapter25_1.o:chapter25_1.c
+	g++ -c chapter25_1.c
+
+#聊天室中介者模式代码
+chapter25_2:chapter25_2.o
+	g++ -o chapter25_2 chapter25_2.o
+chapter25_2.o:chapter25_2.c
+	g++ -c chapter25_2.c
 
 
 .PHONY:all
