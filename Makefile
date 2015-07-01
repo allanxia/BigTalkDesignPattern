@@ -4,7 +4,7 @@ all:chapter2_1 chapter2_2 chapter3_1 chapter3_2 chapter6_1 chapter6_2 \
 	chapter14_2 chapter15_1 chapter15_2 chapter18_1 chapter18_2 \
 	chapter19_1  chapter19_2 chapter20_1 chapter21_1 chapter21_2 \
 	chapter22_1 chapter22_2 chapter23_1 chapter24_1 chapter25_1 \
-	chapter25_2
+	chapter25_2 chapter26_1 chapter27_1 chapter28_1
 
 #switch中default测试
 chapter2_1:chapter2_1.o
@@ -206,6 +206,23 @@ chapter25_2:chapter25_2.o
 chapter25_2.o:chapter25_2.c
 	g++ -c chapter25_2.c
 
+#基本享元模式代码
+chapter26_1:chapter26_1.o
+	g++ -o chapter26_1 chapter26_1.o
+chapter26_1.o:chapter26_1.c
+	g++ -c chapter26_1.c
+
+#解释器模式
+chapter27_1:chapter27_1.o
+	g++ -o chapter27_1 chapter27_1.o
+chapter27_1.o:chapter27_1.c
+	g++ -c chapter27_1.c
+
+#访问者模式
+chapter28_1:chapter28_1.o
+	g++ -o chapter28_1 chapter28_1.o
+chapter28_1.o:chapter28_1.c
+	g++ -c chapter28_1.c
 
 .PHONY:all
 .PHONY:clean
